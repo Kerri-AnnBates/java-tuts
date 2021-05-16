@@ -33,5 +33,12 @@ public class Example {
             System.out.println("Chaomp!");
         }
 
+        try {
+            dispenser.fill(30);
+        } catch(IllegalArgumentException iae) {
+            System.out.println("Whoa there!!");
+            System.out.printf("The error was: %s %n", iae.getMessage());
+        }
+
     }
 }

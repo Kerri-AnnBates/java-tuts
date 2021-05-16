@@ -26,8 +26,12 @@ class PezDispenser {
     
     // void keyword means not returning anything.
     public void fill() {
-        pezCount = MAX_PEZ;
+        fill(MAX_PEZ);
     }
+
+    public void fill(int pezAmount) {
+        pezCount += pezAmount;
+    } 
     
     // returns a string.
     public String getCharacterName() {
